@@ -1,6 +1,5 @@
 #!/bin/bash
-git clone https://github.com/timizdepot/jenkins-cicd-java.git
-cd jenkins-cicd-java
-git checkout prometheus-and-grafana
+git clone -b prometheus-and-grafana https://github.com/timizdepot/jenkins-cicd-java.git /tmp/jenkins-cicd-java
+cd /tmp/jenkins-cicd-java
 ./install-grafana.sh
 ./install-node-expoerter.sh
